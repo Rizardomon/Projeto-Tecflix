@@ -29,18 +29,6 @@ function Home() {
         category={dadosIniciais.categorias[2]}
       />
 
-      <Carrousel 
-        category={dadosIniciais.categorias[3]}
-      />
-
-      <Carrousel 
-        category={dadosIniciais.categorias[4]}
-      />
-
-      <Carrousel 
-        category={dadosIniciais.categorias[5]}
-      />
-
       <Footer />
     </div>
   );
