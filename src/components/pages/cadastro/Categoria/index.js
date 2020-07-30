@@ -7,25 +7,24 @@ function CadastroCategoria() {
   const valoresIniciais = {
     nome: '',
     descricao: '',
-    cor: ''
+    cor: '#ffffff'
   }
 
   const [categorias, setCategorias] = useState([]);
   const [valores, setValores] = useState(valoresIniciais);
 
-
+  
   function setValor (chave, valor) {
     setValores({
       ...valores,
       [chave]: valor
     })
   }
-
+  
   function handleChange(event) {
-    const { getAttribute, value } = event.target;
     setValor(
-      getAttribute('name'),
-      value
+      event.target.getAttribute('name'),
+      event.target.value
     );
   }
 
